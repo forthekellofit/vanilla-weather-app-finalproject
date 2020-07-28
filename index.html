@@ -3,32 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>WeatherApp</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0c46aa5fb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
+
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1>
-          It's Weather Time!
-        </h1>
+        <h1><i class="fas fa-map-marker-alt"></i> Toronto</h1>
 
-        <small>
-          <a
-            href="https://github.com/forthekellofit/vanilla-weather-app-finalproject"
-            target="_blank"
-            >Open source code</a
-          >
-          by Kellie Smith</small
-        >
+        <br />
+
+        <ul>
+          <li id="day-date"></li>
+          <li id="time"></li>
+        </ul>
+        <div class="location">
+          <form>
+            <input
+              type="text"
+              placeholder="Aruba, Jamaica, Ooh I wanna take ya"
+              autocomplete="off"
+              size="50"
+              id="location-input"
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="searchbtn"
+              id="submit-button"
+            />
+            <button class="currentlocationbtn" id="current-location-btn">
+              Current Location
+            </button>
+          </form>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-4"><i class="fas fa-sun"></i></div>
+          <div class="col-4">
+            Today <br />
+            <span class="current temp" id="current-temp">26</span>
+            <span class="units">
+              <a href="#" id="celcius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+
+            <br />
+            <span class="description" id="conditions"></span>
+          </div>
+          <div class="col-4">
+            Humidity <br />
+            <span class="humidity" id="humidity">10%</span>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>FORECAST</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">MON</h5>
+                <h6 class="card-subtitle mb-2 text-muted">28°C</h6>
+                <p class="card-text">
+                  <i class="far fa-sun"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">TUE</h5>
+                <h6 class="card-subtitle mb-2 text-muted">22°C</h6>
+                <p class="card-text">
+                  <i class="fas fa-cloud-sun"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">WED</h5>
+                <h6 class="card-subtitle mb-2 text-muted">31°C</h6>
+                <p class="card-text">
+                  <i class="far fa-sun"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">THUR</h5>
+                <h6 class="card-subtitle mb-2 text-muted">27°C</h6>
+                <p class="card-text">
+                  <i class="far fa-sun"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">FRI</h5>
+                <h6 class="card-subtitle mb-2 text-muted">21°C</h6>
+                <p class="card-text">
+                  <i class="fas fa-cloud-rain"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <small>
+      <a
+        href="https://github.com/forthekellofit/vanilla-weather-app-finalproject"
+        target="_blank"
+        >Open source code</a
+      >
+      by Kellie Smith</small
+    >
     <script src="src/app.js"></script>
   </body>
 </html>
