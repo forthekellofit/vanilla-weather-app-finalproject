@@ -16,9 +16,13 @@ body {
   border-radius: 15px;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
+
 li {
   list-style-type: none;
-  font-size: 28px;
+  font-size: 20px;
 }
 h1,
 h2 {
