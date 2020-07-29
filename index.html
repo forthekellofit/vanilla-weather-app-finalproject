@@ -25,130 +25,134 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-      <div class="weather-app">
-        <h1><i class="fas fa-map-marker-alt"></i> Toronto</h1>
+        <div class="weather-app">
+          <h1>
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="city-headline" id="city-headline">Toronto</span>
+          </h1>
 
-        <br />
+          <br />
 
-        <ul>
-          <li>Last updated - <span id="day-date"></span></li>
-          <li id="time"></li>
-        </ul>
-        <div class="location">
-          <form>
+          <ul>
+            <li>Last updated - <span id="day-date"></span></li>
+            <li id="time"></li>
+          </ul>
+
+          <form id="search-form">
             <input
-              type="text"
+              type="search"
               placeholder="Aruba, Jamaica, Ooh I wanna take ya"
               autocomplete="off"
-              size="50"
+              size="40"
+              class="locationinput"
               id="location-input"
             />
+
             <input
               type="submit"
               value="Search"
               class="searchbtn"
               id="submit-button"
             />
+
             <button class="currentlocationbtn" id="current-location-btn">
               Current Location
             </button>
           </form>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-4">
-            <img src = "" class="weathericon" id="current-weather-icon"></img>
-          </div>
-          <div class="col-4">
-            Today <br />
-            <span class="current temp" id="current-temp">26</span>
-            <span class="units">
-              <a href="#" id="celcius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
 
-            <br />
-            <span class="description" id="conditions"></span>
-          </div>
-          <div class="col-4">
-            Humidity <br />
-            <span class="humidity" id="humidity">10%</span>
-          </div>
-        </div>
+          <br />
+          <div class="row">
+            <div class="col-4">
+              <img src="" class="weathericon" id="current-weather-icon" />
+            </div>
+            <div class="col-4">
+              Today <br />
+              <span class="current temp" id="current-temp">26</span>
+              <span class="units">
+                <a href="#" id="celcius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
 
-        <hr />
+              <br />
+              <span class="description" id="conditions"></span>
+            </div>
+            <div class="col-4">
+              Humidity <br />
+              <span class="humidity" id="humidity">10%</span>
+            </div>
+          </div>
 
-        <h2>FORECAST</h2>
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">MON</h5>
-                <h6 class="card-subtitle mb-2 text-muted">28°C</h6>
-                <p class="card-text">
-                  <i class="far fa-sun"></i>
-                </p>
+          <hr />
+
+          <h2>FORECAST</h2>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">MON</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">28°C</h6>
+                  <p class="card-text">
+                    <i class="far fa-sun"></i>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">TUE</h5>
-                <h6 class="card-subtitle mb-2 text-muted">22°C</h6>
-                <p class="card-text">
-                  <i class="fas fa-cloud-sun"></i>
-                </p>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">TUE</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">22°C</h6>
+                  <p class="card-text">
+                    <i class="fas fa-cloud-sun"></i>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">WED</h5>
-                <h6 class="card-subtitle mb-2 text-muted">31°C</h6>
-                <p class="card-text">
-                  <i class="far fa-sun"></i>
-                </p>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">WED</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">31°C</h6>
+                  <p class="card-text">
+                    <i class="far fa-sun"></i>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">THUR</h5>
-                <h6 class="card-subtitle mb-2 text-muted">27°C</h6>
-                <p class="card-text">
-                  <i class="far fa-sun"></i>
-                </p>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">THUR</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">27°C</h6>
+                  <p class="card-text">
+                    <i class="far fa-sun"></i>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">FRI</h5>
-                <h6 class="card-subtitle mb-2 text-muted">21°C</h6>
-                <p class="card-text">
-                  <i class="fas fa-cloud-rain"></i>
-                </p>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">FRI</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">21°C</h6>
+                  <p class="card-text">
+                    <i class="fas fa-cloud-rain"></i>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <small>
-      <a
-        href="https://github.com/forthekellofit/vanilla-weather-app-finalproject"
-        target="_blank"
-        >Open source code</a
+      <small>
+        <a
+          href="https://github.com/forthekellofit/vanilla-weather-app-finalproject"
+          target="_blank"
+          >Open source code</a
+        >
+        by Kellie Smith</small
       >
-      by Kellie Smith</small
-    >
+      <script src="src/app.js"></script>
     </div>
-    </div>
-    <script src="src/app.js"></script>
-    
   </body>
 </html>
