@@ -51,9 +51,15 @@ function displayTemperature(response) {
 
   let dateElement = document.querySelector("#day-date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let weatherIcon = document.querySelector("#current-weather-icon");
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let apiKey = "855dcf2816c3df70674db30fa73e361c";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let city = "Toronto";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
