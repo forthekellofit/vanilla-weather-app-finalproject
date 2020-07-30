@@ -145,3 +145,12 @@ hr {
   height: 4px;
   width: 90%;
 }
+
+.active {
+  cursor: default;
+  color: #092532;
+}
+
+.active:hover {
+  text-decoration: none;
+}
