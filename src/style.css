@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h3 {
@@ -122,4 +122,8 @@ hr {
 
 .weather-forecast-temperature {
   font-size: 18px;
+}
+
+i.fas.fa-temperature-high {
+  color: #fe91ca;
 }
