@@ -20,14 +20,12 @@ body {
   border-radius: 15px;
 }
 
-ul {
-  padding-inline-start: 0px;
-}
-
 li {
   list-style-type: none;
   font-size: 16px;
+  text-align: left;
 }
+
 h1,
 h2 {
   text-align: center;
@@ -38,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h3 {
@@ -91,22 +89,6 @@ i.fas.fa-map-marker-alt {
   cursor: pointer;
 }
 
-.currentlocationbtn {
-  background: #7fdbda;
-  border: #7fdbda;
-  color: #1d1b38;
-  border-radius: 31px;
-  padding: 5px 15px;
-  transition: all 150ms ease-in-out;
-  margin: 15px;
-}
-
-.currentlocationbtn:hover {
-  background: #092532;
-  color: white;
-  cursor: pointer;
-}
-
 .humidity {
   font-size: 48px;
 }
@@ -139,5 +121,5 @@ hr {
 }
 
 .weather-forecast-temperature {
-  font-size: 14px;
+  font-size: 18px;
 }

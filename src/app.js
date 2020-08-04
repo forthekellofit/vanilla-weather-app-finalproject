@@ -83,10 +83,10 @@ function displayForecast(response) {
       width= 60px"      
       alt=""
     />
-    <div class="weather-forecast-temperature">
+    <div class="weather-forecast-temperature" id="forecasttemps">
       <strong>${Math.round(forecast.main.temp_max)}°
       </strong>
-       ${Math.round(forecast.main.temp_min)}°
+       
               </div>
   </div>
           `;
@@ -109,6 +109,8 @@ function handleSubmit(event) {
   search(input.value);
 }
 
+// Fahrenheit
+
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperature = document.querySelector("#current-temp");
@@ -118,6 +120,8 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperature.innerHTML = Math.round(fahrenheitTemperature);
 }
+
+// Celcius
 
 function displayCelciusTemperature(event) {
   event.preventDefault();

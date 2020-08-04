@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Lobster&display=swap"
       rel="stylesheet"
     />
     <script
@@ -31,13 +31,6 @@
             <span class="city-headline" id="city-headline">Toronto</span>
           </h1>
 
-          <br />
-
-          <ul>
-            <li>Last updated - <span id="day-date"></span></li>
-            <li id="time"></li>
-          </ul>
-
           <form id="search-form">
             <input
               type="search"
@@ -55,12 +48,14 @@
               id="submit-button"
             />
 
-            <button class="currentlocationbtn" id="current-location-btn">
-              Current Location
-            </button>
-          </form>
+            <ul>
+              <li>Last updated - <span id="day-date"></span></li>
+              <li id="time"></li>
+            </ul>
 
-          <br />
+         
+                  
+          
           <div class="row">
             <div class="col-4">
               <img src="" class="weathericon" id="current-weather-icon" />
@@ -84,9 +79,11 @@
 
           <hr />
 
-          <h2>HOURLY FORECAST</h2>
-          <div class="row weather-forecast" id="forecast"></div>
-        </div>
+          <h2>UPCOMING FORECAST</h2>
+          <div class="row weather-forecast" id="forecast">
+                </div>
+             
+              </div>
       </div>
       <small>
         <a
