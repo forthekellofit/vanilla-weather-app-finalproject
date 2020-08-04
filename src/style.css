@@ -15,7 +15,8 @@ body {
 .weather-app {
   padding: 20px;
   border: 1px solid #7fdbda;
-  background: #f6bed6;
+
+  background: linear-gradient(#f6bed6, white);
   border-radius: 15px;
 }
 
@@ -40,33 +41,23 @@ h2 {
   font-size: 28px;
 }
 
+h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 .locationinput {
   border-radius: 4px;
   border: white;
   padding: 5px 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 500px;
 }
 
 .row {
   text-align: center;
   font-size: 20px;
-}
-
-.card {
-  text-align: center;
-  background: #f6def6;
-  border-radius: 25px;
-}
-
-i.far.fa-sun,
-i.fas.fa-cloud-sun,
-i.fas.fa-cloud-rain {
-  font-size: 25px;
-}
-
-i.far.fa-sun {
-  color: burlywood;
 }
 
 i.fas.fa-map-marker-alt {
@@ -82,14 +73,6 @@ i.fas.fa-map-marker-alt {
 .units {
   position: relative;
   top: -20px;
-}
-
-.card-subtitle.mb-2.text-muted {
-  font-size: 1rem;
-}
-
-.card-title {
-  font-size: large;
 }
 
 .searchbtn {
@@ -137,7 +120,7 @@ i.fas.fa-map-marker-alt {
   transition: all 150ms ease-in-out;
 }
 .col-4:hover {
-  background: #f6def6;
+  background: #f6bed6;
 }
 
 hr {
@@ -153,4 +136,8 @@ hr {
 
 .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
 }
