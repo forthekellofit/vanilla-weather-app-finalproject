@@ -15,7 +15,6 @@ body {
 .weather-app {
   padding: 20px;
   border: 1px solid #7fdbda;
-
   background: linear-gradient(#f6bed6, #d3dbff);
   border-radius: 15px;
 }
@@ -24,11 +23,6 @@ li {
   list-style-type: none;
   font-size: 16px;
   text-align: left;
-}
-
-h1,
-h2 {
-  text-align: center;
 }
 
 h1 {
@@ -72,7 +66,8 @@ i.fas.fa-map-marker-alt {
   top: -5px;
 }
 
-.current.temp {
+.current.temp,
+.humidity {
   font-size: 48px;
 }
 
@@ -97,13 +92,9 @@ i.fas.fa-map-marker-alt {
   cursor: pointer;
 }
 
-.humidity {
-  font-size: 48px;
-}
-
 .description {
   text-transform: capitalize;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .col-4 {
@@ -117,7 +108,6 @@ i.fas.fa-map-marker-alt {
 hr {
   border-color: #05dfd7;
   height: 4px;
-  width: 90%;
 }
 
 .active {

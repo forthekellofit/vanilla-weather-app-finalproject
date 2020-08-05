@@ -50,6 +50,7 @@ function displayTemperature(response) {
   let h1 = document.querySelector("#city-headline");
   let description = document.querySelector("#conditions");
   let humidity = document.querySelector("#humidity");
+  let wind = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#day-date");
   let weatherIcon = document.querySelector("#current-weather-icon");
 
@@ -59,6 +60,7 @@ function displayTemperature(response) {
   h1.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = `${response.data.main.humidity}%`;
+  wind.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   weatherIcon.setAttribute(
     "src",
