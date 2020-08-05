@@ -55,7 +55,7 @@ h3 {
 @media (max-width: 480px) {
   .locationinput {
     width: 60%;
-    font-size: smaller;
+    font-size: 12px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -131,6 +131,12 @@ hr {
 
 .weather-forecast-temperature {
   font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .weather-forecast {
+    width: 90%;
+  }
 }
 
 i.fas.fa-temperature-high {
