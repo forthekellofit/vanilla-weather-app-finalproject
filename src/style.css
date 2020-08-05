@@ -146,6 +146,12 @@ hr {
 }
 
 @media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
   h3 {
     font-size: 14px;
   }
