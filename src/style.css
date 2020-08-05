@@ -53,7 +53,7 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  .weather-app-wrapper {
+  .locationinput {
     width: 60%;
     font-size: smaller;
     margin-left: auto;
