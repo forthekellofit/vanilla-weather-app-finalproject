@@ -55,7 +55,7 @@ h3 {
 @media (max-width: 480px) {
   .locationinput {
     width: 75%;
-    font-size: 1rem;
+    font-size: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -139,10 +139,15 @@ hr {
 }
 
 @media (max-width: 480px) {
-  h3,
   .weather-forecast,
   .forecasticons {
     width: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 14px;
   }
 }
 
