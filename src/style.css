@@ -141,7 +141,7 @@ hr {
 @media (max-width: 480px) {
   .weather-forecast,
   .forecasticons {
-    width: 105%;
+    width: 110%;
   }
 }
 
